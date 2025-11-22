@@ -20,7 +20,7 @@ const App = () => {
         <Skills/>
         <WorkExperience/>
         <Education/>
-        <Contact/>
+        {/* <Contact/> */}
 
 
       </div>

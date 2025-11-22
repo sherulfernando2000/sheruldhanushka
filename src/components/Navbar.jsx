@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import logo from "../assets/logo1.png"
+import logo from "../assets/logo3.png"
 import { NAVIGATION_LINKS } from '../constants';
 import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa6';
@@ -34,24 +34,24 @@ const Navbar = () => {
     <div>
       <nav className="fixed left-0 right-0 top-4 z-50">
         {/* Desktop menu */}
-        <div className="mx-auto hidden max-w-fit items-center justify-center rounded-full border border-stone-50/30 bg-black/20 py-3 px-6 backdrop-blur-lg lg:flex">
+        <div className="mx-auto hidden max-w-fit items-center justify-center rounded-full border border-stone-50/30 bg-white/10 backdrop-blur-md shadow-lg shadow-white/10 py-3 px-6  lg:flex">
           <div className="flex items-center justify-between gap-6">
             <div>
               <a href="#">
-                <img src={logo} width={160} height={100} alt="logo" />
+                <img src={logo} width={60}  alt="logo" />
               </a>
             </div>
-            <div className='flex items-center gap-3'>
+            <div className='flex items-center gap-5 '>
               {NAVIGATION_LINKS.map((item, index) => (
                 <a
                   key={index}
                   href={item.href}
                   className={`
-                    px-4 py-2 text-sm rounded-full transition-all duration-300
-                    hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/5 hover:scale-125
+                    px-4 py-1 text-lg rounded-full transition-all duration-300
+                    hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/5 hover:scale-110
                     hover:border hover:border-white/20
                     ${activeLink === item.href
-                      ? 'bg-white/15 backdrop-blur-lg border border-white/30 shadow-lg shadow-white/10 text-purple-600'
+                      ? 'bg-white/15 backdrop-blur-lg border border-white/30 shadow-lg shadow-white/10 text-white'
                       : 'border border-transparent'
                     }
                   `}

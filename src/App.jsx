@@ -16,13 +16,6 @@ import { MdEmail } from "react-icons/md";
 
 
 const App = () => {
-  const icons = [
-  { icon: <FaGithub />, link: "https://github.com/yourusername" },
-  { icon: <FaLinkedin />, link: "https://linkedin.com/in/yourusername" },
-  { icon: <FaTwitter />, link: "https://twitter.com/yourusername" },
-  { icon: <FaInstagram />, link: "https://instagram.com/yourusername" },
-  { icon: <MdEmail />, link: "mailto:your@email.com" },
-];
 
   return (
     <div className="relative h-full overflow-y-auto antialiased font-cormorant">

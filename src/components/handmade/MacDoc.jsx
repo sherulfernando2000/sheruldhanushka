@@ -14,32 +14,32 @@ const MacDock = () => {
     {
       name: 'GitHub',
       icon: GitHub,
-      url: 'https://github.com/yourusername',
+      url: 'https://github.com/sherulfernando2000',
       color: '#181717'
     },
     {
       name: 'LinkedIn',
       icon: LinkedIn,
-      url: 'https://linkedin.com/in/yourusername',
+      url: 'https://www.linkedin.com/in/sherul-dhanushka-204a58202/',
       color: '#0A66C2'
     },
     
     {
       name: 'Instagram',
       icon: Insta,
-      url: 'https://instagram.com/yourusername',
+      url: 'https://www.instagram.com/sherul_dhanushka/',
       color: '#E4405F'
     },
     {
       name: 'Email',
       icon: Email,
-      url: 'mailto:your.email@example.com',
+      url: 'https://www.linkedin.com/in/sherul-dhanushka-204a58202/',
       color: '#EA4335'
     },
     {
       name: 'FaceBook',
       icon: Facebook,
-      url: 'https://twitter.com/yourusername',
+      url: 'https://web.facebook.com/profile.php?id=100010758600877&_rdc=1&_rdr#',
       color: '#1DA1F2'
     },
   ];

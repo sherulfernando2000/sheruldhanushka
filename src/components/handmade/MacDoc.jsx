@@ -86,7 +86,7 @@ const MacDock = () => {
                 {/* Tooltip */}
                 <div 
                   className="absolute -top-8 left-1/2 -translate-x-1/2 
-                             bg-gray-900/90 text-white text-xs px-3 py-1.5 rounded-lg
+                             bg-gray-900/90 text-white text-xs xl px-3 py-1.5 rounded-lg
                              opacity-0 group-hover:opacity-100 pointer-events-none
                              transition-opacity duration-200 whitespace-nowrap
                              backdrop-blur-sm"

@@ -26,7 +26,7 @@ const App = () => {
 
   return (
     <div className="relative h-full overflow-y-auto antialiased font-cormorant">
-      <div className="fixed inset-0 bg-fixed bg-cover bg-center bg-img"></div>
+      {/* <div className="fixed inset-0 bg-fixed bg-cover bg-center bg-img"></div> */}
 
       <div className="relative z-20 flex flex-col items-center p-0 space-y-8 container mx-auto">
         {/* Hero Section with Background */}
@@ -42,9 +42,9 @@ const App = () => {
             <h2 className="my-8 p-1 text-4xl font-bold md:text-5xl lg:text-6xl">
               {HERO.name}
             </h2>
-            <h3 className="md:text-4xl lg:text-5xl">Im FrontEnd Developer</h3>
+            <h3 className="md:text-4xl lg:text-5xl">I'm a FrontEnd Developer</h3>
 
-            <p className="mb-8 pt-7 text-xl">{HERO.description}</p>
+            <p className="mb-8 pt-7 p-6 text-2xl">{HERO.description}</p>
 
              <MacDoc/>
           </div>

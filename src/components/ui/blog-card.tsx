@@ -1,7 +1,8 @@
-"use client"
+
 import { ArrowUpRight } from "lucide-react";
 import { useState } from "react"
-import Link from "next/link";
+import { Link } from 'react-router-dom';
+
 
 type Blog = {
     id: number;
@@ -11,10 +12,11 @@ type Blog = {
 };
 
 export default function BlogCard({blog}:{blog:Blog}) {
+
     const [isHovered, setIsHovered] = useState(false);
 
     return (
-        <Link href={""}>
+        <Link to={""}>
             <div className={`w-full relative h-64 sm:h-80 md:h-84 hover:cursor-pointer`}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}

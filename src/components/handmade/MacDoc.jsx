@@ -98,7 +98,7 @@ const MacDock = () => {
 
                 {/* Icon Container */}
                 <div 
-                  className="w-10 h-10 md:w-12 md:h-12 flex items-center justify-center
+                  className="w-7 h-7 md:w-12 md:h-12 flex items-center justify-center
                              rounded-xl md:rounded-2xl
                              
                              shadow-lg group-hover:shadow-xl

@@ -34,7 +34,7 @@ export const HERO = {
   name: "SHERUL DHANUSHKA",
   greet: "Hello there! ",
   description:
-    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
+    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.Besides keeping up with new developments, I enjoy using them in real projects to see what's possible.",
 };
 
 export const PROJECTS = [
@@ -89,9 +89,9 @@ export const PROJECTS = [
 ];
 
 export const BIO = [
-  "Carl Frank studied computer science at the University of Technology,from which he graduated in 2010. Following his education, he honed his craft and expertise over the course of 10 years at Tech Innovations Inc., where he immersed himself in the world of frontend development.",
-  "In 2021, driven by a shared vision for innovative web solutions and a passion for creating extraordinary user experiences Carl Frank co-founded WebArtistry alongside his creative partner, Jane Doe. Together, they set out to redefine frontend development, infusing their projects with creativity and cutting-edge technology.",
-  "As a multi-disciplinary frontend developer, Carl Frank brings a wealth of skills and expertise to his work. From his deep understanding of HTML, CSS, and JavaScript to his proficiency in modern frameworks like React and Vue.js, Carl Frank possesses a versatile skill set that allows him to craft stunning and unforgettable web experiences for his clients and audiences alike.",
+  "Hello! I'm Sherul Dhanushka, a dedicated web developer with expertise in both front-end and back-end technologies. I specialize in crafting responsive and accessible web applications, ensuring a seamless user experience through meticulous UI/UX design.",
+  "I have hands-on experience building full-stack applications using modern frameworks like React, Next.js, and React Native on the front end, as well as Spring Boot, Node.js, and Express on the back end.Along with technical skills, I focus deeply on code quality and intuitive user experiences—balancing both engineering logic and creative design.",
+  "continuously explore new tools and technologies to stay aligned with the evolving software landscape. I'm committed to growing as a software engineer and contributing to impactful, user-centric products—whether independently or as part of a collaborative team.",
 ];
 
 export const SKILLS = [

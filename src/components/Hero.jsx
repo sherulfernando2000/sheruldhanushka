@@ -19,7 +19,7 @@ const Hero = () => {
                 </h2>
                 <h3 className="text-2xl md:text-4xl lg:text-5xl">I'm a FrontEnd Developer</h3>
     
-                <p className="mb-8 pt-7 p-6 text-md md:text-xl lg:text-2xl">{HERO.description}</p>
+                <p className="mb-8 pt-7 px-20 text-md md:text-xl lg:text-2xl">{HERO.description}</p>
     
                  <MacDoc/>
               </div>

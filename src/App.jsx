@@ -4,6 +4,7 @@ import Hero from "./components/Hero"
 import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import Skills from "./components/Skills"
+import Services from "./components/Services.jsx"
 import WorkExperience from "./components/WorkExperience"
 import MacDoc from "./components/handmade/MacDoc.jsx"
 import DarkVeil from './components/DarkVeil';
@@ -30,6 +31,7 @@ const App = () => {
         <Navbar />
         <Project />
         <Bio />
+        <Services/>
         <Skills />
         <WorkExperience />
         <Education />

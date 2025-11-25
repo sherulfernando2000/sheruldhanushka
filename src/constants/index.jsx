@@ -194,3 +194,31 @@ export const SOCIAL_MEDIA_LINKS = [
     icon: <FaLinkedin fontSize={25} className="hover:opacity-80" />,
   },
 ];
+
+export const SERVICES = [
+    {
+        "id":1,
+        "title": "web Development",
+        "info1": "I specialize in modern front-end development with React, Tailwind CSS, and Angular, creating fast, responsive, and visually polished user interfaces that deliver smooth and intuitive experiences.",
+        "info2": "We build HIPAA-compliant systems, telemedicine platforms, and AI health analytics tools.",
+        "img": "/sheruldhanushka/src/assets/project2.jpeg",
+        "icon": "laptop-minimal"
+    },
+    {
+        "id":2,
+        "title": "Backend Development",
+        "info1": "I develop robust backend systems using Spring Boot, NestJS, and Laravel, building secure APIs, handling business logic, and ensuring efficient, scalable server-side performance",
+        "info2": "We specialize in payment gateways, blockchain integration, and regulatory automation.",
+        "img": "/sheruldhanushka/src/assets/project2.jpeg",
+        "icon": "PcCase"
+    },
+    {
+        "id":3,
+        "title": "Mobile Applications",
+        "info1": "I build cross-platform mobile applications using React Native and Firebase, delivering fast, seamless apps with real-time data, secure authentication, and smooth user experiences across both Android and iOS.",
+        "info2": "From LMS platforms to AI-driven assessment tools, we redefine digital learning.",
+        "img": "/sheruldhanushka/src/assets/project2.jpeg",
+        "icon": "Smartphone"
+    },
+    
+]

@@ -1,6 +1,6 @@
-// "use client"
+
 // import { useState } from 'react';
-// import {ArrowUpRight, LucideIcon, Icon} from 'lucide-react';
+// import {ArrowUpRight, Icon} from 'lucide-react';
 
 // type Industry = {
 //     id: number;

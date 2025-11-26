@@ -32,8 +32,8 @@ const App = () => {
         <Project />
         <Bio />
         <Services/>
-        <Skills />
-        <WorkExperience />
+        {/* <Skills /> */}
+        {/* <WorkExperience /> */}
         <Education />
       </div>
     </div>

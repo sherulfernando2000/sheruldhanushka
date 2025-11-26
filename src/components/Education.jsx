@@ -62,9 +62,8 @@ const Education = () => {
   ];
 
   return (
-    <div className="w-full py-16 px-4 ">
-      {/* bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 */}
-      <div className="max-w-6xl mx-auto">
+    <div className="w-full py-16 px-1 md:px-4">
+      <div className="max-full mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -78,7 +77,7 @@ const Education = () => {
         {/* Timeline */}
         <div className="relative">
           {/* Vertical Line */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full 
+          <div className="absolute -left-4 md:left-1/2 md:transform md:-translate-x-1/2 w-1 h-full 
                          bg-gradient-to-b from-blue-500 via-cyan-500 to-blue-500 opacity-40 shadow-lg shadow-blue-500/30" />
 
           {/* Timeline Items */}
@@ -95,11 +94,11 @@ const Education = () => {
                   onMouseEnter={() => setHoveredIndex(index)}
                   onMouseLeave={() => setHoveredIndex(null)}
                 >
-                  <div className={`flex items-center ${isLeft ? 'flex-row' : 'flex-row-reverse'}`}>
+                  <div className={`flex items-center ${isLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                     {/* Content Card */}
-                    <div className={`w-5/12 ${isLeft ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
+                    <div className={`w-full md:w-5/12 ${isLeft ? 'md:pr-8 md:text-right' : 'md:pl-8 md:text-left'} pl-7 md:pl-0`}>
                       <div
-                        className={`relative bg-white/5 backdrop-blur-sm rounded-2xl p-6 border border-white/10
+                        className={`relative bg-white/20 backdrop-blur-sm rounded-2xl p-6 border border-white/10
                                    transition-all duration-500 hover:bg-white/10 hover:border-blue-400/50
                                    hover:scale-105 group overflow-hidden
                                    ${isHovered ? 'shadow-2xl shadow-blue-500/50' : ''}`}
@@ -129,16 +128,18 @@ const Education = () => {
                         </p>
                       </div>
 
-                      {/* Connector Line */}
-                      <div
-                        className={`absolute top-8 w-1/2 h-0.5 bg-gradient-to-r from-blue-400 to-cyan-400
-                                   ${isLeft ? 'left-0' : 'right-0'}
+                      {/* Connector Line - Hidden on mobile */}
+                      {/* <div
+                        className={`hidden xl:block absolute top-8 h-0.5 bg-gradient-to-r 
+                                   ${isLeft ? 'right-48 -translate-x-96' : 'left-48 translate-x-96'}
+                                   ${isLeft ? 'bg-gradient-to-r from-blue-400 to-cyan-400' : 'bg-gradient-to-l from-blue-400 to-cyan-400'}
                                    ${isHovered ? 'shadow-lg shadow-blue-500/50' : ''}`}
-                      />
+                        style={{ width: 'calc(15% - 3rem)' }}
+                      /> */}
                     </div>
 
                     {/* Center Icon */}
-                    <div className="w-2/12 flex justify-center">
+                    <div className="absolute -left-12 md:relative md:left-auto w-16 md:w-2/12 flex justify-center">
                       <div
                         className={`relative z-10 w-16 h-16 md:w-20 md:h-20 rounded-full
                                    bg-gradient-to-br from-blue-500 to-cyan-500 flex items-center justify-center
@@ -155,8 +156,8 @@ const Education = () => {
                       </div>
                     </div>
 
-                    {/* Empty Space on opposite side */}
-                    <div className="w-5/12" />
+                    {/* Empty Space on opposite side - Hidden on mobile */}
+                    <div className="hidden md:block md:w-5/12" />
                   </div>
                 </div>
               );

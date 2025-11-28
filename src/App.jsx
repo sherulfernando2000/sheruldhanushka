@@ -33,7 +33,7 @@ const App = () => {
         <Bio />
         <Services/>
         {/* <Skills /> */}
-        {/* <WorkExperience /> */}
+        <WorkExperience />
         <Education />
       </div>
     </div>

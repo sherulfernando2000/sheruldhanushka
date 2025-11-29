@@ -14,6 +14,14 @@ import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
+import project_nextEventImage from "../assets/project_section/project_nextEventImage.png";
+import project_BookClubImage from "../assets/project_section/project_BookClubImage.png";
+import project_smartClassImage from "../assets/project_section/project_smartClassImage.png";
+import project_BakeryImage from "../assets/project_section/project_BakeryImage.png";
+import project_CulinaryManageImage from "../assets/project_section/project_CulinaryManageImage.png";
+import project_PosImage from "../assets/project_section/project_PosImage.png";
+
+
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiMongodb } from "react-icons/si";
@@ -37,56 +45,133 @@ export const HERO = {
     "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.Besides keeping up with new developments, I enjoy using them in real projects to see what's possible.",
 };
 
-export const PROJECTS = [
+
+export const ProjectsData = [
   {
     id: 1,
-    name: "Personal Portfolio",
-    description:
-      "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
-    image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    title: "NextEVENT Mobile App",
+    description: "A feature-rich mobile app for event management, built using React Native, Expo, and NativeWind for styling.",
+    tech: ["React Native", "Firebase", "NativeWind"],
+    image: project_nextEventImage,
+    github: "https://github.com/sherulfernando2000/NextEVENT",
+    demo: "https://www.linkedin.com/posts/sherul-dhanushka-204a58202_next-event-app-demo-download-check-activity-7376158078075023361-gEGJ?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADPE5CQB9EB8fzgR1e2_A04MotNThX_htmg"
   },
   {
     id: 2,
-    name: "E-Commerce Platform",
-    description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
-    image: projectImage2,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    title: "Book Club Management System",
+    description: "A modern web app for managing book clubs, built with React, Tailwind CSS, Node.js, Express, MongoDB, and Node Mail for notifications",
+    tech: ["React", "Express", "Tailwind"],
+    image: project_BookClubImage,
+    github: "https://github.com/sherulfernando2000/Book_Club_Management",
+    demo: "https://www.youtube.com/watch?v=DzAKM_wfO4s"
   },
   {
     id: 3,
-    name: "Task Management Tool",
-    description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
-    image: projectImage3,
-    githubLink: "https://github.com/user/task-management-tool",
+    title: "Smart-Class Management",
+    description: "An advanced classroom management system featuring React frontend with Tailwind/MUI, and Spring Boot backend with JPA, Spring Security, and JWT authentication.",
+    tech: ["React", "Spring Boot", "Tailwind"],
+    image: project_smartClassImage,
+    github: "https://github.com/sherulfernando2000/Smart-Class",
+    demo: "https://www.linkedin.com/posts/sherul-dhanushka-204a58202_springboot-reactjs-fullstackdevelopment-activity-7321709420831227904-l48I?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPE5CQB9EB8fzgR1e2_A04MotNThX_htmg"
   },
   {
     id: 4,
-    name: "Weather App",
-    description:
-      "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
-    image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+    title: "Bakery Management System",
+    description: "A Bakery management tool developed using Java, JavaFX, Maven, MySQL.",
+    tech: ["Java", "JavaFX", "Maven", "MySQL"],
+    image: project_BakeryImage,
+    github: "https://github.com/sherulfernando2000/LayeredArchi-snsBakery.git",
+    demo: "https://www.linkedin.com/posts/sherul-dhanushka-204a58202_softwaredevelopment-java-javafx-activity-7206223455870984193-pAB5?utm_source=share&utm_medium=member_desktop&rcm=ACoAADPE5CQB9EB8fzgR1e2_A04MotNThX_htmg"
   },
   {
     id: 5,
-    name: "Blog Platform",
-    description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
-    image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+    title: "Culinary Management System",
+    description: "This project is built using Java, JavaFX,Hibernate, Layered Architecture.",
+    tech: ["JavaFx", "Hibernate", "Jave","MySQL"],
+    image: project_CulinaryManageImage,
+    github: "https://github.com/sherulfernando2000/Student_Management_System_ORM.git",
+    demo: "https://www.linkedin.com/posts/sherul-dhanushka-204a58202_digital-student-registration-system-for-the-activity-7294619781440118785-GI-o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADPE5CQB9EB8fzgR1e2_A04MotNThX_htmg"
   },
   {
     id: 6,
-    name: "Chat Application",
-    description:
-      "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
-    image: projectImage6,
-    githubLink: "https://github.com/user/chat-application",
+    title: "POS System",
+    description: "This project is built using HTML, CSS, JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript","JSP"],
+    image: project_PosImage,
+    github: "https://github.com/sherulfernando2000/Assigment-6_POS-System.git",
+    demo: "https://studio.youtube.com/video/pugb4j0PQkU/edit"
   },
+  // {
+  //   id: 7,
+  //   title: "Weather Dashboard",
+  //   description: "Real-time weather tracking application with beautiful UI.",
+  //   tech: ["React", "Firebase", "Tailwind"],
+  //   image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
+  //   github: "https://github.com",
+  //   demo: "https://demo.com"
+  // },
+  // {
+  //   id: 8,
+  //   title: "Recipe Sharing Platform",
+  //   description: "Community-driven recipe sharing platform with user ratings.",
+  //   tech: ["Angular", "NestJS", "Tailwind"],
+  //   image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80",
+  //   github: "https://github.com",
+  //   demo: "https://demo.com"
+  // },
+  
 ];
+
+// export const PROJECTS = [
+//   {
+//     id: 1,
+//     name: "Personal Portfolio",
+//     description:
+//       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
+//     image: projectImage1,
+//     githubLink: "https://github.com/user/personal-portfolio",
+//   },
+//   {
+//     id: 2,
+//     name: "E-Commerce Platform",
+//     description:
+//       "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
+//     image: projectImage2,
+//     githubLink: "https://github.com/user/ecommerce-platform",
+//   },
+//   {
+//     id: 3,
+//     name: "Task Management Tool",
+//     description:
+//       "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+//     image: projectImage3,
+//     githubLink: "https://github.com/user/task-management-tool",
+//   },
+//   {
+//     id: 4,
+//     name: "Weather App",
+//     description:
+//       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
+//     image: projectImage4,
+//     githubLink: "https://github.com/user/weather-app",
+//   },
+//   {
+//     id: 5,
+//     name: "Blog Platform",
+//     description:
+//       "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+//     image: projectImage5,
+//     githubLink: "https://github.com/user/blog-platform",
+//   },
+//   {
+//     id: 6,
+//     name: "Chat Application",
+//     description:
+//       "A real-time chat application using Firebase for backend services, including user authentication, chat rooms, and instant messaging features. Built with React and Firebase.",
+//     image: projectImage6,
+//     githubLink: "https://github.com/user/chat-application",
+//   },
+// ];
 
 export const BIO = [
   "Hello! I'm Sherul Dhanushka, a dedicated web developer with expertise in both front-end and back-end technologies. I specialize in crafting responsive and accessible web applications, ensuring a seamless user experience through meticulous UI/UX design.",

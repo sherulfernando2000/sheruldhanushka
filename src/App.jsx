@@ -5,7 +5,7 @@ import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import Skills from "./components/Skills"
 import Services from "./components/Services.jsx"
-import WorkExperience from "./components/WorkExperience"
+// import WorkExperience from "./components/WorkExperience"
 import MacDoc from "./components/handmade/MacDoc.jsx"
 import DarkVeil from './components/DarkVeil';
 import carlImg from "./assets/carl.jpeg"
@@ -29,11 +29,11 @@ const App = () => {
 
       <div className="relative z-20 flex flex-col items-center p-8 pl-20 space-y-8 container mx-auto">
         <Navbar />
-        <Project />
         <Bio />
         <Services/>
+        <Project />
         {/* <Skills /> */}
-        <WorkExperience />
+        {/* <WorkExperience /> */}
         <Education />
       </div>
     </div>

@@ -100,7 +100,8 @@ export default function Project() {
   const [selectedFilter, setSelectedFilter] = useState('All');
   const [showAll, setShowAll] = useState(false);
 
-  const filters = ['All', 'React', 'Angular', 'React Native', 'Tailwind', 'Spring Boot', 'NestJS', 'Laravel', 'Firebase'];
+  const filters = ['All', 'React', 'React Native', 'Tailwind', 'Spring Boot', 'NestJS', 'Firebase'];
+  // 'Angular', 'Laravel'
 
   // Filter projects based on selected tech
   const filteredProjects = selectedFilter === 'All' 
@@ -150,13 +151,13 @@ export default function Project() {
       </div>
 
       {/* Show More/Less Button */}
-      {filteredProjects.length > 6 && (
+      {filteredProjects.length > 3 && (
         <div className="flex justify-center mt-12">
           <button
             onClick={() => setShowAll(!showAll)}
             className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-full font-medium transition-all duration-300 hover:scale-105 shadow-lg shadow-blue-500/50"
           >
-            {showAll ? 'Show Less' : `Show More (${filteredProjects.length - 6} more)`}
+            {showAll ? 'Show Less' : `Show More (${filteredProjects.length - 3} more)`}
           </button>
         </div>
       )}

@@ -211,12 +211,12 @@ export default function ProjectCard({ project }) {
             </div>
 
             {/* Action Buttons on Hover */}
-            <div className="flex gap-3">
+            <div className="flex justify-end gap-3">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white rounded-xl px-4 py-2 transition-all duration-300 hover:scale-95 border border-white/20"
+                className="flex items-center gap-2 bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white rounded-xl px-3 py-1  md:px-4 md:py-2 transition-all duration-300 hover:scale-95 border border-white/20"
               >
                 <Github className="w-4 h-4" />
                 <span className="text-sm">GitHub</span>
@@ -225,10 +225,10 @@ export default function ProjectCard({ project }) {
                 href={project.demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white rounded-xl px-4 py-2 transition-all duration-300 hover:scale-95 border border-white/20"
+                className="flex items-center gap-2 bg-black/70 hover:bg-black/90 backdrop-blur-sm text-white rounded-xl px-3 py-1 md:px-4 md:py-2 transition-all duration-300 hover:scale-95 border border-white/20"
               >
                 <ExternalLink className="w-4 h-4" />
-                <span className="text-sm">Live Demo</span>
+                <span className="text-sm">Demo</span>
               </a>
             </div>
           </div>

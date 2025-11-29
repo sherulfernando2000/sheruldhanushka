@@ -50,7 +50,7 @@ export const ProjectsData = [
   {
     id: 1,
     title: "NextEVENT Mobile App",
-    description: "A feature-rich mobile app for event management, built using React Native, Expo, and NativeWind for styling.",
+    description: "A feature-rich mobile app for event management.",
     tech: ["React Native", "Firebase", "NativeWind"],
     image: project_nextEventImage,
     github: "https://github.com/sherulfernando2000/NextEVENT",
@@ -59,7 +59,7 @@ export const ProjectsData = [
   {
     id: 2,
     title: "Book Club Management System",
-    description: "A modern web app for managing book clubs, built with React, Tailwind CSS, Node.js, Express, MongoDB, and Node Mail for notifications",
+    description: "A modern web app for managing book clubs.",
     tech: ["React", "Express", "Tailwind"],
     image: project_BookClubImage,
     github: "https://github.com/sherulfernando2000/Book_Club_Management",
@@ -87,7 +87,7 @@ export const ProjectsData = [
     id: 5,
     title: "Culinary Management System",
     description: "This project is built using Java, JavaFX,Hibernate, Layered Architecture.",
-    tech: ["JavaFx", "Hibernate", "Jave","MySQL"],
+    tech: ["JavaFx", "Hibernate", "Jave", "MySQL"],
     image: project_CulinaryManageImage,
     github: "https://github.com/sherulfernando2000/Student_Management_System_ORM.git",
     demo: "https://www.linkedin.com/posts/sherul-dhanushka-204a58202_digital-student-registration-system-for-the-activity-7294619781440118785-GI-o?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAADPE5CQB9EB8fzgR1e2_A04MotNThX_htmg"
@@ -96,7 +96,7 @@ export const ProjectsData = [
     id: 6,
     title: "POS System",
     description: "This project is built using HTML, CSS, JavaScript.",
-    tech: ["HTML", "CSS", "JavaScript","JSP"],
+    tech: ["HTML", "CSS", "JavaScript", "JSP"],
     image: project_PosImage,
     github: "https://github.com/sherulfernando2000/Assigment-6_POS-System.git",
     demo: "https://studio.youtube.com/video/pugb4j0PQkU/edit"
@@ -119,7 +119,7 @@ export const ProjectsData = [
   //   github: "https://github.com",
   //   demo: "https://demo.com"
   // },
-  
+
 ];
 
 // export const PROJECTS = [
@@ -281,29 +281,44 @@ export const SOCIAL_MEDIA_LINKS = [
 ];
 
 export const SERVICES = [
-    {
-        "id":1,
-        "title": "web Development",
-        "info1": "I specialize in modern front-end development with React, Tailwind CSS, and Angular, creating fast, responsive, and visually polished user interfaces that deliver smooth and intuitive experiences.",
-        "info2": "We build HIPAA-compliant systems, telemedicine platforms, and AI health analytics tools.",
-        "img": projectImage2,
-        "icon": "laptop-minimal"
-    },
-    {
-        "id":2,
-        "title": "Backend Development",
-        "info1": "I develop robust backend systems using Spring Boot, NestJS, and Laravel, building secure APIs, handling business logic, and ensuring efficient, scalable server-side performance",
-        "info2": "We specialize in payment gateways, blockchain integration, and regulatory automation.",
-        "img": projectImage2,
-        "icon": "PcCase"
-    },
-    {
-        "id":3,
-        "title": "Mobile Applications",
-        "info1": "I build cross-platform mobile applications using React Native and Firebase, delivering fast, seamless apps with real-time data, secure authentication, and smooth user experiences across both Android and iOS.",
-        "info2": "From LMS platforms to AI-driven assessment tools, we redefine digital learning.",
-        "img": projectImage2,
-        "icon": "Smartphone"
-    },
-    
+  {
+    "id": 1,
+    "title": "web Development",
+    "info1": "I specialize in modern front-end development with React, Tailwind CSS, and Angular, creating fast, responsive, and visually polished user interfaces that deliver smooth and intuitive experiences.",
+    "info2": "We build HIPAA-compliant systems, telemedicine platforms, and AI health analytics tools.",
+    "img": projectImage2,
+    "icon": "laptop-minimal"
+  },
+  {
+    "id": 2,
+    "title": "Backend Development",
+    "info1": "I develop robust backend systems using Spring Boot, NestJS, and Laravel, building secure APIs, handling business logic, and ensuring efficient, scalable server-side performance",
+    "info2": "We specialize in payment gateways, blockchain integration, and regulatory automation.",
+    "img": projectImage2,
+    "icon": "PcCase"
+  },
+  {
+    "id": 3,
+    "title": "Mobile Applications",
+    "info1": "I build cross-platform mobile applications using React Native and Firebase, delivering fast, seamless apps with real-time data, secure authentication, and smooth user experiences across both Android and iOS.",
+    "info2": "From LMS platforms to AI-driven assessment tools, we redefine digital learning.",
+    "img": projectImage2,
+    "icon": "Smartphone"
+  },
+  {
+    "id": 4,
+    "title": "UI/UX Design",
+    "info1": "Design beautiful and intuitive user interfaces that provide excellent user experiences.",
+    "icon": "Palette",
+    "img": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80"
+  },
+
+  {
+    "id": 5,
+    "title": "Software Solutions",
+    "info1": "Custom software development tailored to your business needs and requirements.",
+    "icon": "Code",
+    "img": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800&q=80"
+  }
+
 ]

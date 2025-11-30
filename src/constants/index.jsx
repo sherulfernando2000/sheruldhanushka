@@ -7,6 +7,11 @@ import {
   FaInstagram,
 } from "react-icons/fa6";
 
+import {
+  Code, Palette, Server, Database, Smartphone
+} from 'lucide-react'; // Import icons from lucide-react
+
+
 import projectImage1 from "../assets/project1.jpeg";
 import projectImage2 from "../assets/project2.jpeg";
 import projectImage3 from "../assets/project3.jpeg";
@@ -179,38 +184,38 @@ export const BIO = [
   "continuously explore new tools and technologies to stay aligned with the evolving software landscape. I'm committed to growing as a software engineer and contributing to impactful, user-centric products—whether independently or as part of a collaborative team.",
 ];
 
-export const SKILLS = [
-  {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
-    experience: "2+ years",
-  },
-  {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
-    experience: "1+ year",
-  },
-  {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
-  },
-  {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
-    experience: "1+ year",
-  },
-  {
-    icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "Node.js",
-    experience: "2+ years",
-  },
-  {
-    icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
-    name: "PostgreSQL",
-    experience: "1+ year",
-  },
-];
+// export const SKILLS = [
+//   {
+//     icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+//     name: "React",
+//     experience: "2+ years",
+//   },
+//   {
+//     icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
+//     name: "Next.js",
+//     experience: "1+ year",
+//   },
+//   {
+//     icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+//     name: "MongoDB",
+//     experience: "1.5+ years",
+//   },
+//   {
+//     icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
+//     name: "Redis",
+//     experience: "1+ year",
+//   },
+//   {
+//     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
+//     name: "Node.js",
+//     experience: "2+ years",
+//   },
+//   {
+//     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
+//     name: "PostgreSQL",
+//     experience: "1+ year",
+//   },
+// ];
 
 export const EXPERIENCES = [
   {
@@ -322,3 +327,65 @@ export const SERVICES = [
   }
 
 ]
+
+// src/constants/index.js (or src/data/skills.js)
+
+
+export const SKILLS_DATA = [
+  {
+    category: "Languages",
+    icon: Code,
+    skills: [
+      "Java", "Python", "JavaScript", "TypeScript", "PHP", "SQL", "NoSQL", "HTML", "CSS"
+    ]
+  },
+  {
+    category: "Frontend",
+    icon: Palette,
+    skills: [
+      "React.js", "Angular", "Next.js", "Tailwind CSS", "Bootstrap", "Redux", "Context API", , "Axios"
+    ]
+  },
+  {
+    category: "Backend",
+    icon: Server,
+    skills: [
+      "Spring Boot", "Nest.js", "Express.js", "Laravel", "Hibernate", "Prisma", "JWT", "OAuth2", "RESTful APIs"
+    ]
+  },
+  {
+    category: "Databases",
+    icon: Database,
+    skills: [
+      "MySQL", "PostgreSQL", "MongoDB", "Firebase", "Firestore", "SQLite", "Redis"
+    ]
+  },
+  {
+    category: "Infrastructure",
+    icon: Code,
+    skills: [
+      "Microservices", "Docker", "API Gateway", "Eureka", "CI/CD", "GitHub Actions", "AWS", "Vercel"
+    ]
+  },
+  {
+    category: "Mobile",
+    icon: Smartphone,
+    skills: [
+      "React Native", "NativeWind", "Expo", "Flutter"
+    ]
+  },
+  {
+    category: "Tools",
+    icon: Code,
+    skills: [
+      "Git", "GitHub", "Figma", "Canva", "VS Code", "IntelliJ IDEA", "Postman", "Cloudinary"
+    ]
+  },
+  {
+    category: "Additional",
+    icon: Code,
+    skills: [
+      "MVC Architecture", "Unit Testing", "JUnit", "Payment Gateways", "PayHere", "Airwallex"
+    ]
+  },
+];

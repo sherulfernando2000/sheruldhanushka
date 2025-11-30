@@ -65,7 +65,7 @@ export default function serviceCard({ service }) {
 
       {/* Desktop: Bottom section - decorative border effect */}
       <div className={`hidden md:block absolute bottom-0 left-0 right-0 transition-all duration-300 ease-in-out ${
-        isHovered ? 'h-full bg-black' : 'h-32'
+        isHovered ? 'h-full bg-black' : 'h-36'
       } ${isHovered ? 'opacity-0' : 'opacity-100'}`}>
         <div className="h-full px-6">
           <div className="w-full h-full rounded-xl" style={{

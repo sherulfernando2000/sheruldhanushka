@@ -110,7 +110,7 @@ const Skills = () => {
   }, [isAutoPlaying]);
 
   return (
-    <section className="flex w-full flex-col gap-8 sm:gap-12 py-12 sm:py-20 text-white">
+    <section className="flex w-full flex-col gap-8 pl-4 sm:gap-12 py-12 sm:py-20 text-white">
       <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center px-4 mb-6">
         MY SKILLS
       </h1>

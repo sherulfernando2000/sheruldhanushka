@@ -6,7 +6,7 @@ import  MagnifyText  from '../components/handmade/MagnifyText';
 
 const Bio = () => {
   return (
-    <section className="flex w-full flex-col gap-12 pt-20 pr-16">
+    <section className="flex w-full flex-col gap-12 pt-20 px-5 sm:pr-16">
       {/* <h1 className="text-center text-3xl lg:text-4xl">Bio</h1> */}
       <h1 className="mb-12 mt-20 text-center text-3xl lg:text-4xl font-semibold">Bio</h1>
  

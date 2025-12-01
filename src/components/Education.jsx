@@ -62,7 +62,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="w-full py-16 px-1 md:px-4">
+    <div className="w-full py-16 px-1 md:px-4 pl-8">
       <div className="max-full mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

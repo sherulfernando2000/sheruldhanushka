@@ -4,7 +4,7 @@ import { SKILLS_DATA } from '../constants'; // Adjust path if you put it in data
 
 // A simple component for a single skill card
 const SkillCard = ({ category, icon: Icon, skills }) => (
-  <div className="h-full skill-card bg-white/15 opacity-80 backdrop-blur-sm rounded-xl p-6 lg:p-8 shadow-xl transition-all duration-300 border-l-4 border-blue-500
+  <div className="h-full max-w-sm md:max-w-sm lg:max-w-lg  skill-card bg-white/15 opacity-80 backdrop-blur-sm rounded-xl p-6 lg:p-8 shadow-xl transition-all duration-300 border-l-4 border-blue-500
                 hover:-translate-y-2 hover:shadow-2xl hover:border-blue-700
                 hover:shadow-blue-500/[0.2] relative overflow-hidden"> {/* Added relative & overflow-hidden for pseudo-element */}
     {/* Optional: Mimic the ::before gradient effect */}
@@ -115,7 +115,7 @@ const Skills = () => {
         MY SKILLS
       </h1>
 
-      <div className='relative px-4 sm:px-8 lg:px-16'>
+      <div className='relative sm:px-8 lg:px-16'>
         {/* Navigation Arrows */}
         <button
           onClick={handlePrevious}

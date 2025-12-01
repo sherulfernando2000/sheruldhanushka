@@ -27,7 +27,7 @@ const App = () => {
         <Hero/>
       </div>
 
-      <div className="relative z-20 flex flex-col items-center p-8 pl-20 space-y-8 container mx-auto">
+      <div className="relative z-20 flex flex-col items-center p-2 pl-12 sm:p-8 sm:pl-20 space-y-8 container mx-auto">
         <Navbar />
         <Bio />
         <Services/>

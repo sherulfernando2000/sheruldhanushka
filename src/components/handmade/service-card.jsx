@@ -10,7 +10,7 @@ export default function serviceCard({ service }) {
 
     return (
     <div
-      className={`max-w-72 md:max-w-sm lg:max-w-lg h-full ${isHovered ? "" : "md:border-l-2"} transition-all duration-300 cursor-pointer relative`}
+      className={`max-w-64 md:max-w-sm lg:max-w-lg h-full ${isHovered ? "" : "md:border-l-2"} transition-all duration-300 cursor-pointer relative`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       style={{ minHeight: '400px' }}

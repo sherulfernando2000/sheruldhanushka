@@ -11,7 +11,7 @@ type inputProps = {
 
 export default function InputField({ label, type = "text", required = false, placeholder = "", value, onChange }: inputProps) {
   const [isFocused, setIsFocused] = useState(false);
-  const [hasContent, setHasContent] = useState(false);
+  const [hasContent] = useState(false);
 
   const handleFocus = () => setIsFocused(true);
   const handleBlur = () => setIsFocused(false);

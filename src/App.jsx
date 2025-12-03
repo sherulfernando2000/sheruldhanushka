@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar"
 import Project from "./components/Project"
 import Skills from "./components/Skills"
 import Services from "./components/Services.jsx"
+import Contact from "./components/Contact.jsx"
 // import WorkExperience from "./components/WorkExperience"
 import MacDoc from "./components/handmade/MacDoc.jsx"
 import DarkVeil from './components/DarkVeil';
@@ -32,10 +33,10 @@ const App = () => {
         <Bio />
         <Services/>
         <Project />
-        
         {/* <WorkExperience /> */}
         <Education />
         <Skills />
+        <Contact/>
       </div>
     </div>
 

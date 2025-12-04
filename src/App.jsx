@@ -6,6 +6,7 @@ import Project from "./components/Project"
 import Skills from "./components/Skills"
 import Services from "./components/Services.jsx"
 import Contact from "./components/Contact.jsx"
+import Blog from "./components/Blog.jsx"
 // import WorkExperience from "./components/WorkExperience"
 import MacDoc from "./components/handmade/MacDoc.jsx"
 import DarkVeil from './components/DarkVeil';
@@ -36,6 +37,7 @@ const App = () => {
         {/* <WorkExperience /> */}
         <Education />
         <Skills />
+        <Blog/>
         <Contact/>
       </div>
     </div>

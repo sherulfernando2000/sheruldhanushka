@@ -113,7 +113,7 @@ const Education = () => {
                         <div className={`relative inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold
                                        bg-gradient-to-r from-blue-500 to-cyan-500 text-white
                                        shadow-lg shadow-blue-500/50 transition-all duration-300
-                                       group-hover:shadow-blue-500/80 group-hover:scale-110`}>
+                                       `}>
                           {item.year}
                         </div>
 

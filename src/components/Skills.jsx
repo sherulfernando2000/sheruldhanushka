@@ -4,21 +4,22 @@ import { SKILLS_DATA } from '../constants'; // Adjust path if you put it in data
 
 // A simple component for a single skill card
 const SkillCard = ({ category, icon: Icon, skills }) => (
-  <div className="h-full max-w-[280px] md:max-w-sm lg:max-w-lg  skill-card bg-white/15 opacity-80 backdrop-blur-sm rounded-xl p-6 lg:p-8 shadow-xl transition-all duration-300 border-l-4 border-blue-500
-                hover:-translate-y-2 hover:shadow-2xl hover:border-blue-700
-                hover:shadow-blue-500/[0.2] relative overflow-hidden"> {/* Added relative & overflow-hidden for pseudo-element */}
+  <div className="h-full max-w-[280px] md:max-w-sm lg:max-w-lg  skill-card bg-white/10 opacity-80 backdrop-blur-sm rounded-xl p-6 lg:p-8 shadow-xl transition-all duration-300 border-l-4 border-cyan-500
+                hover:-translate-y-2 hover:shadow-lg hover:border-cyan-400
+                hover:shadow-blue-500 relative overflow-hidden"> {/* Added relative & overflow-hidden for pseudo-element */}
     {/* Optional: Mimic the ::before gradient effect */}
     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/0 transition-opacity duration-300 group-hover:opacity-5"></div>
 
 
-    <h2 className="text-xl lg:text-2xl font-semibold text-blue-400 mb-4 flex items-center gap-3 relative z-10">
-      {Icon && <Icon className="w-7 h-7 text-blue-500" />} {category}
+    <h2 className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-blue-500 to-cyan-500 text-white
+                                       shadow-lg shadow-blue-500/50 mb-4 flex items-center gap-3 relative z-10 px-3 rounded-3xl py-2 hover:shadow-blue-500/80 0">
+      {Icon && <Icon className="w-7 h-7 " />} {category}
     </h2>
     <div className="flex flex-wrap gap-3 relative z-10">
       {skills.map((skill, skillIndex) => (
         <span
           key={skillIndex}
-          className="skill-tag bg-gray-800 text-white px-4 py-2 rounded-full text-sm lg:text-base font-medium transition-all duration-300 border border-blue-400 hover:bg-blue-500 hover:border-blue-500"
+          className="skill-tag bg-white/10  text-white px-4 py-2 rounded-full text-sm lg:text-base font-medium transition-all duration-300 border border-gradient-to-br from-blue-500 to-cyan-500 border-blue-400 hover:bg-blue-500 hover:border-blue-500"
         >
           {skill}
         </span>
@@ -150,12 +151,12 @@ const Skills = () => {
               let minDistance = Infinity;
 
               SKILLS_DATA.forEach((_, index) => {
-                  const cardPosition = cardWidth * index;
-                  const distance = Math.abs(scrollLeft - cardPosition);
-                  if (distance < minDistance) {
-                      minDistance = distance;
-                      closestIndex = index;
-                  }
+                const cardPosition = cardWidth * index;
+                const distance = Math.abs(scrollLeft - cardPosition);
+                if (distance < minDistance) {
+                  minDistance = distance;
+                  closestIndex = index;
+                }
               });
 
               if (closestIndex !== currentIndex) {
@@ -170,9 +171,9 @@ const Skills = () => {
               <div
                 key={index}
                 className="flex-shrink-0 w-full sm:w-[calc(50%-1rem)] md:w-[calc(33.333%-1.333rem)] lg:w-[400px] skill-card-wrapper" // Adjust card width as needed
-                // For desktop, a fixed width works well. For mobile/tablet, responsive widths.
-                // The w-[calc(50%-1rem)] assumes a gap of `gap-8` (2rem/2 = 1rem per card)
-                // For 'md' grid-like effect, w-[calc(33.333%-1.333rem)] for gap-8
+              // For desktop, a fixed width works well. For mobile/tablet, responsive widths.
+              // The w-[calc(50%-1rem)] assumes a gap of `gap-8` (2rem/2 = 1rem per card)
+              // For 'md' grid-like effect, w-[calc(33.333%-1.333rem)] for gap-8
               >
                 <SkillCard {...skillCategory} />
               </div>
@@ -189,11 +190,10 @@ const Skills = () => {
                 scrollToIndex(index);
                 setIsAutoPlaying(false);
               }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                currentIndex === index
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index
                   ? 'bg-blue-500 w-6' // Active dot styling
                   : 'bg-white/30 hover:bg-white/50' // Inactive dot styling
-              }`}
+                }`}
               aria-label={`Go to skill category ${index + 1}`}
             />
           ))}

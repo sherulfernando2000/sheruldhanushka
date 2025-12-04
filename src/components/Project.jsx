@@ -114,11 +114,13 @@ export default function Project() {
   return (
     <section className="pt-20 px-4 sm:px-8 lg:px-1 min-h-screen" id="work">
       {/* Header */}
-      <h2 className="text-center text-4xl sm:text-5xl font-bold tracking-tight text-white mb-8">
-        Projects
-      </h2>
+      <div className='flex justify-center'>
+        <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> Projects</h1>
+  
+      </div>
+     
       <p className="text-center text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
-        Explore my portfolio of web and mobile applications built with modern technologies
+        " Turning ideas into real, working solutions. "
       </p>
 
       {/* Filter Bar */}

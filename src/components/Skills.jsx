@@ -111,10 +111,14 @@ const Skills = () => {
   }, [isAutoPlaying]);
 
   return (
-    <section className="flex w-full flex-col gap-8 pl-4 sm:gap-12 py-12 sm:py-20 text-white">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center px-4 mb-6">
-        MY SKILLS
-      </h1>
+    <section className="flex w-full flex-col  pl-4 py-12 sm:py-20 text-white">
+      <div className='flex justify-center'>
+        <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> MY SKILLS</h1>
+      </div>
+
+      <p className="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+       " Tools, technologies, and the expertise behind them "
+      </p>
 
       <div className='relative sm:px-8 lg:px-16'>
         {/* Navigation Arrows */}

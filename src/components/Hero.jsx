@@ -13,7 +13,7 @@ const Hero = () => {
     
               {/* Hero section content - positioned above background */}
               <div className="flex flex-col items-center justify-center z-10 w-full ">
-                <p className="p-2 text-2xl md:text-3xl  lg:text-4xl tracking-tighter bg-white/15 px-4 rounded-full">{HERO.greet}</p>
+                <p className="p-2 text-2xl md:text-3xl  lg:text-4xl tracking-tighter border border-white bg-white/15 px-4 rounded-full">{HERO.greet}</p>
                 <h2 className="my-8 p-1 text-3xl font-bold md:text-5xl lg:text-6xl">
                   {HERO.name}
                 </h2>

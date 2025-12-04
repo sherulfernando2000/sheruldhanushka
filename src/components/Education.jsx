@@ -1,76 +1,22 @@
 import React, { useState } from 'react';
 import { GraduationCap, Briefcase, Award, Code, Rocket, Star } from 'lucide-react';
+import { TimelineData } from '../constants'
 
 const Education = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-
-  const timelineData = [
-    {
-      year: '2025',
-      title: 'First Internship',
-      description: 'Working as a intern softwaere developer at Sans-Technologies.',
-      icon: GraduationCap,
-      color: 'from-blue-400 to-blue-600',
-      iconBg: 'bg-blue-500',
-      side: 'left'
-    },
-    {
-      year: '2024 - 2025',
-      title: 'Demonstrater in IJSE',
-      description: 'Worked as a part-time demonstrater for programming courses.',
-      icon: Code,
-      color: 'from-green-400 to-green-600',
-      iconBg: 'bg-green-500',
-      side: 'right'
-    },
-    {
-      year: '2023 - 2025',
-      title: 'Institute of Software Enginnering',
-      description: 'Completed HND in Software Engineering.',
-      icon: Briefcase,
-      color: 'from-yellow-400 to-yellow-600',
-      iconBg: 'bg-yellow-500',
-      side: 'left'
-    },
-    {
-      year: '2022 - 2023',
-      title: 'VTA Srilanka',
-      description: 'Completed Quantity Surveying Diploma.',
-      icon: Award,
-      color: 'from-orange-400 to-orange-600',
-      iconBg: 'bg-orange-500',
-      side: 'right'
-    },
-    {
-      year: '2021',
-      title: 'University Of Rajarata',
-      description: 'Selected for applied science degree.',
-      icon: Rocket,
-      color: 'from-red-400 to-red-600',
-      iconBg: 'bg-red-500',
-      side: 'left'
-    },
-    {
-      year: '2019',
-      title: 'Holy Cross College',
-      description: 'Complete A/L with B,C & S in Chemistry,Combined Maths & Physics.',
-      icon: Star,
-      color: 'from-purple-400 to-purple-600',
-      iconBg: 'bg-purple-500',
-      side: 'right'
-    }
-  ];
 
   return (
     <div className="w-full py-16 px-1 md:px-4 pl-8">
       <div className="max-full mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            My Journey
-          </h2>
+          <div className='flex justify-center'>
+            <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl">My Journey</h1>
+
+          </div>
+
           <p className="text-gray-400 text-lg">
-            Education & Professional Experience
+            " Education & Professional Experience "
           </p>
         </div>
 
@@ -82,7 +28,7 @@ const Education = () => {
 
           {/* Timeline Items */}
           <div className="space-y-12">
-            {timelineData.map((item, index) => {
+            {TimelineData.map((item, index) => {
               const Icon = item.icon;
               const isLeft = item.side === 'left';
               const isHovered = hoveredIndex === index;
@@ -108,7 +54,7 @@ const Education = () => {
                           <div className="absolute inset-0 bg-gradient-to-br from-blue-400/20 via-cyan-400/10 to-transparent 
                                         animate-pulse pointer-events-none rounded-2xl" />
                         )}
-                        
+
                         {/* Year Badge */}
                         <div className={`relative inline-block mb-3 px-4 py-1 rounded-full text-sm font-semibold
                                        bg-gradient-to-r from-blue-500 to-cyan-500 text-white

@@ -38,7 +38,7 @@ const Services = () => {
       // or calculate based on the first card if they vary.
       const firstCard = mobileScrollRef.current.querySelector('.service-card-mobile-wrapper');
       const cardWidth = firstCard ? firstCard.offsetWidth : mobileScrollRef.current.offsetWidth; // Fallback
-      
+
       mobileScrollRef.current.scrollTo({
         left: cardWidth * index,
         behavior: 'smooth'
@@ -112,10 +112,14 @@ const Services = () => {
 
 
   return (
-    <section className="flex w-full flex-col gap-8 sm:gap-12 py-12 sm:py-20 ">
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white text-center px-4">
-        SERVICES
-      </h1>
+    <section className="flex w-full flex-col  py-12 sm:py-20 ">
+      <div className='flex justify-center'>
+        <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> Services</h1>
+      </div>
+
+      <p className="text-center text-gray-400 text-lg mb-16 max-w-2xl mx-auto">
+        " Crafting clean, efficient, and future-ready products. "
+      </p>
 
       {/* Mobile: Show 1.5 cards with horizontal scroll and arrows */}
       <div className='md:hidden relative px-4'>
@@ -178,11 +182,10 @@ const Services = () => {
                 scrollToIndexMobile(index);
                 setIsAutoPlaying(false);
               }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                currentIndex === index
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index
                   ? 'bg-blue-500 w-6'
                   : 'bg-white/30 hover:bg-white/50'
-              }`}
+                }`}
               aria-label={`Go to service ${index + 1}`}
             />
           ))}
@@ -241,11 +244,10 @@ const Services = () => {
                 scrollToIndexDesktop(index);
                 setIsAutoPlaying(false);
               }}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                currentIndex === index
+              className={`w-2 h-2 rounded-full transition-all duration-300 ${currentIndex === index
                   ? 'bg-blue-500 w-6'
                   : 'bg-white/30 hover:bg-white/50'
-              }`}
+                }`}
               aria-label={`Go to service ${index + 1}`}
             />
           ))}

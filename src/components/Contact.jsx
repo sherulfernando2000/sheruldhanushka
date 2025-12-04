@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import InputField from '../components/handmade/input';
 import { ArrowUpRight, ChevronLeft, ChevronRight } from 'lucide-react';
+import { SERVICES } from '../constants'
 
 export default function ContactForm() {
 
@@ -11,28 +12,28 @@ export default function ContactForm() {
   const [isAutoPlay, setIsAutoPlay] = useState(true);
 
   const testimonials = [
-  {
-    id: 1,
-    text: "Sherul delivered a clean, high-performance web platform using React and Tailwind. His attention to detail and UI/UX thinking helped us turn rough ideas into a polished final product. The modular code structure and responsiveness of the design clearly show his strength in front-end engineering.",
-    name: "Kasun Perera",
-    title: "Product Manager, NovaLabs",
-    image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
-  },
-  {
-    id: 2,
-    text: "We worked with Sherul on a full-stack system built with NestJS and Firebase. His ability to connect real-time data flows with a smooth user experience was outstanding. What impressed us most was his quick problem-solving and deep understanding of modern backend architecture.",
-    name: "Amanda Silva",
-    title: "CTO, CloudEdge Solutions",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
-  },
-  {
-    id: 3,
-    text: "Sherul built our internal dashboard using Spring Boot and React, and the result exceeded expectations. The API design was clean, secure, and scalable. His full-stack skills—both UI development and backend engineering—helped us streamline our workflow significantly.",
-    name: "Ravindu Fernando",
-    title: "CEO, InsightTech",
-    image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
-  }
-];
+    {
+      id: 1,
+      text: "Sherul delivered a clean, high-performance web platform using React and Tailwind. His attention to detail and UI/UX thinking helped us turn rough ideas into a polished final product. The modular code structure and responsiveness of the design clearly show his strength in front-end engineering.",
+      name: "Kasun Perera",
+      title: "Product Manager, NovaLabs",
+      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop"
+    },
+    {
+      id: 2,
+      text: "We worked with Sherul on a full-stack system built with NestJS and Firebase. His ability to connect real-time data flows with a smooth user experience was outstanding. What impressed us most was his quick problem-solving and deep understanding of modern backend architecture.",
+      name: "Amanda Silva",
+      title: "CTO, CloudEdge Solutions",
+      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop"
+    },
+    {
+      id: 3,
+      text: "Sherul built our internal dashboard using Spring Boot and React, and the result exceeded expectations. The API design was clean, secure, and scalable. His full-stack skills—both UI development and backend engineering—helped us streamline our workflow significantly.",
+      name: "Ravindu Fernando",
+      title: "CEO, InsightTech",
+      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop"
+    }
+  ];
 
   const contact_details =
   {
@@ -254,6 +255,7 @@ export default function ContactForm() {
   return (
     <div className="h-full  flex items-center justify-center">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
+        
 
         <div className="text-white ">
           <h1 className="text-2xl sm:text-4xl font-light mb-12 ">
@@ -384,91 +386,111 @@ export default function ContactForm() {
           </form>
         </div>
 
-        <div className="rounded-lg p-8 lg:p-12 flex flex-col justify-between border border-stone-50/30 bg-white/10 backdrop-blur-md shadow-lg shadow-white/10">
-          <div>
-            <h2 className="text-xl font-semibold mb-4 text-white">
-              What My customer's say
-            </h2>
+        <div className="relative rounded-lg p-8 lg:p-12 flex flex-col justify-between border border-stone-50/30 shadow-lg shadow-white/10 overflow-hidden min-h-[450px]">
 
-            {/* Avatar */}
-            <div className="flex items-center gap-4 mb-4">
-              <img
-                src={currentTestimonial.image}
-                alt={currentTestimonial.name}
-                className="w-16 h-16 rounded-full object-cover"
-              />
-              <div>
-                <div className="font-semibold text-gray-300">
-                  {currentTestimonial.name}
-                </div>
-                <div className="text-sm text-gray-400">
-                  {currentTestimonial.title}
+          {/* 1. BACKGROUND IMAGE HOLDER (Absolute) */}
+          {/* The image is applied here via the React 'style' prop for dynamic URL injection */}
+          <div
+            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-opacity duration-500"
+            style={{ backgroundImage: `url('${SERVICES[0].img}')` }}
+            aria-hidden="true"
+          >
+          </div>
+
+          {/* 2. SEMI-TRANSPARENT BLURRED OVERLAY (Absolute) */}
+          {/* This replicates your original 'bg-white/10 backdrop-blur-md' but layered over the image */}
+          <div className="absolute inset-0 z-10 bg-black/80 backdrop-blur-sm rounded-lg" />
+
+          {/* 3. CONTENT WRAPPER (Relative z-index to sit above the background layers) */}
+          <div className="relative z-20 flex flex-col justify-between h-full">
+
+            {/* Testimonial Content */}
+            <div>
+              <h2 className="text-xl font-semibold mb-4 text-white">
+                What My customer's say
+              </h2>
+
+              {/* Avatar */}
+              <div className="flex items-center gap-4 mb-4">
+                <img
+                  src={currentTestimonial.image}
+                  alt={currentTestimonial.name}
+                  className="w-16 h-16 rounded-full object-cover"
+                />
+                <div>
+                  <div className="font-semibold text-gray-300">
+                    {currentTestimonial.name}
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    {currentTestimonial.title}
+                  </div>
                 </div>
               </div>
+
+              <div className="text-3xl text-gray-400 ">"</div>
+
+              <p className="text-gray-300 leading-snug mb-1">
+                {currentTestimonial.text}
+              </p>
+
+              <div className="text-3xl text-gray-400 ">"</div>
             </div>
 
-            <div className="text-3xl  text-gray-400 ">"</div>
+            {/* Contact Details, Progress & Navigation */}
+            <div className='mt-8 pt-4 border-t border-white/10'>
+              <div className="space-y-2 mb-8 text-md md:text-lg">
+                <h2 className="text-xl font-semibold mb-4 text-white">
+                  My Contact Details
+                </h2>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span>{contact_details.phone}</span>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <span>{contact_details.email}</span>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <span>{contact_details.address}</span>
+                </div>
+              </div>
 
-            <p className="text-gray-300 leading-snug mb-1">
-              {currentTestimonial.text}
-            </p>
+              {/* Progress Bar */}
+              <div className="mb-6">
+                <div className="w-full h-0.5 bg-gray-200 rounded-full overflow-hidden">
+                  <div
+                    className="h-full bg-blue-500 transition-all duration-100 ease-linear"
+                    style={{ width: `${progress}%` }}
+                  />
+                </div>
+              </div>
 
-            <div className="text-3xl text-gray-400 ">"</div>
-
-          </div>
-
-          <div className="space-y-2 mb-8 text-md md:text-lg">
-             <h2 className="text-xl font-semibold mb-4 text-white">
-             My Contact Details
-            </h2>
-            <div className="flex items-center gap-3 text-gray-300">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-              </svg>
-              <span>{contact_details.phone}</span>
+              {/* Navigation Buttons */}
+              <div className="flex gap-3">
+                <button
+                  onClick={() => handleManualNavigation('prev')}
+                  className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-900 hover:bg-gray-50 transition-colors"
+                  aria-label="Previous testimonial"
+                >
+                  <ChevronLeft className="w-5 h-5 text-gray-300" />
+                </button>
+                <button
+                  onClick={() => handleManualNavigation('next')}
+                  className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-900 hover:bg-gray-50 transition-colors"
+                  aria-label="Next testimonial"
+                >
+                  <ChevronRight className="w-5 h-5 text-gray-300" />
+                </button>
+              </div>
             </div>
-            <div className="flex items-center gap-3 text-gray-300">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              <span>{contact_details.email}</span>
-            </div>
-            <div className="flex items-center gap-3 ttext-gray-300">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              <span>{contact_details.address}</span>
-            </div>
-          </div>
-
-
-          {/* Progress Bar */}
-          <div className="mb-6">
-            <div className="w-full h-0.5 bg-gray-200 rounded-full overflow-hidden">
-              <div
-                className="h-full bg-gray-700 transition-all duration-100 ease-linear"
-                style={{ width: `${progress}%` }}
-              />
-            </div>
-          </div>
-
-          {/* Navigation Buttons */}
-          <div className="flex gap-3">
-            <button
-              onClick={() => handleManualNavigation('prev')}
-              className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-900 hover:bg-gray-50 transition-colors"
-              aria-label="Previous testimonial"
-            >
-              <ChevronLeft className="w-5 h-5 text-white" />
-            </button>
-            <button
-              onClick={() => handleManualNavigation('next')}
-              className="w-12 h-12 rounded-full border-2 border-gray-300 flex items-center justify-center hover:border-gray-900 hover:bg-gray-50 transition-colors"
-              aria-label="Next testimonial"
-            >
-              <ChevronRight className="w-5 h-5 text-white" />
-            </button>
           </div>
         </div>
       </div>

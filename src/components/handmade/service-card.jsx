@@ -80,7 +80,7 @@ export default function serviceCard({ service }) {
       <div className={`hidden md:block absolute inset-0 transition-opacity duration-300 ease-in-out ${
         isHovered ? 'opacity-100 delay-150' : 'opacity-0 duration-300 pointer-events-none'
       }`}>
-        <div className="absolute inset-0 flex flex-col justify-between p-6 bg-black/40 text-white rounded-2xl overflow-hidden">
+        <div className="absolute inset-0 flex flex-col justify-between p-6 bg-black/50 text-white rounded-2xl overflow-hidden">
           <div className="overflow-y-auto">
             <div className="w-16 h-16 border-2 border-white rounded-xl flex items-center justify-center mb-4 backdrop-blur-sm">
               <LucideIcon className="w-8 h-8 text-white" />

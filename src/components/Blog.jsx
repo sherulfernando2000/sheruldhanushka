@@ -1,30 +1,7 @@
 import React, { useState } from "react";
+import { BLOG} from '../constants';
 
 const Blog = () => {
-  const BLOG = [
-    {
-      date: "December 4, 2025",
-      CardTitle: "How Livewire Makes Laravel Easier and How It Works",
-      CardDescription: "When building websites with Laravel, you might want to make your website feel more modern and interactive",
-      image: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*uTHpJEbyLMwEYC56KS5p_Q.png",
-      url: "https://medium.com/@sherul.dhanushka/how-livewire-makes-laravel-easier-and-how-it-works-7ebfd159e107"
-    },
-    {
-      date: "December 4, 2025",
-      CardTitle: "Getting Started with Angular: A Developer’s Perspective",
-      CardDescription: " Choosing the right framework can define how efficiently you build, scale, and maintain web applications",
-      image: "https://miro.medium.com/v2/resize:fit:720/format:webp/1*1UVuedZsgSfDfmc6Ff_M4w.png",
-      url: "https://medium.com/@sherul.dhanushka/getting-started-with-angular-a-developers-perspective-d7c1ce2de5fd"
-    },
-    {
-      date: "Jun 21, 2023",
-      CardTitle: "Instagram Introduces a New Feature Allowing Users to Download Public Reels",
-      CardDescription: "Instagram has recently rolled out an exciting update that grants users the ability to download public Reels.",
-      image: "https://miro.medium.com/v2/resize:fit:1100/format:webp/0*aUlksHmlj_BJm4OO",
-      url: "https://medium.com/@sherul.dhanushka/instagram-introduces-a-new-feature-allowing-users-to-download-public-reels-270546efe8b0"
-    }
-  ]
-
 
   return (
     <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
@@ -32,11 +9,12 @@ const Blog = () => {
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">
             <div className="mx-auto mb-[60px] max-w-[510px] text-center lg:mb-20">
-              <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl md:text-[40px]">
-                My Blog News
-              </h2>
+              <div className='flex justify-center'>
+                <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> My Blog News</h1>
+              </div>
+
               <p className="text-base text-gray-300">
-                Documenting my growth, so others can grow too.
+                " Documenting my growth, so others can grow too. "
               </p>
             </div>
           </div>

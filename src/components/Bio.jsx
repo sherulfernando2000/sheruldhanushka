@@ -6,10 +6,17 @@ import  MagnifyText  from '../components/handmade/MagnifyText';
 
 const Bio = () => {
   return (
-    <section className="flex w-full flex-col gap-12 pt-20 px-5 sm:pr-16">
+    <section className="flex w-full flex-col  px-5 sm:pr-16">
       {/* <h1 className="text-center text-3xl lg:text-4xl">Bio</h1> */}
-      <h1 className="mb-12 mt-20 text-center text-3xl lg:text-4xl font-semibold">Bio</h1>
- 
+      <div className='flex justify-center'>
+        <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl">Bio</h1>
+  
+      </div>
+
+      <p className="text-center text-gray-400 text-lg mb-12 max-w-2xl mx-auto">
+        " My journey in tech, shaped by passion and purpose. "
+      </p>
+      
       <div className="grid grid-col-1 md:grid-cols-3 gap-8">
         <div className="flex justify-center items-center">
           <StarBorder
@@ -24,7 +31,7 @@ const Bio = () => {
           
         </div>
 
-        <div className='md:col-span-2'>
+        <div className='md:col-span-2 flex flex-col items-center justify-center'>
           {BIO.map((bio, index) => (
             <MagnifyText text={bio} />
             // <p className="mb-4 text-lg lg:text-xl transition-transform duration-300 hover:scale-110">{bio} </p>

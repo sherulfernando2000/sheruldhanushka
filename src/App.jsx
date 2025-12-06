@@ -33,22 +33,50 @@ const App = () => {
   return (
     <div className="relative h-full overflow-y-auto antialiased font-cormorant">
       {/* <div className="fixed inset-0 bg-fixed bg-cover bg-center bg-img"></div> */}
+      <div class="snowflakes" aria-hidden="true">
+
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        <div class="snowflake">
+          ❆
+        </div>
+        <div class="snowflake">
+          ❄
+        </div>
+        <div class="snowflake">
+          ❅
+        </div>
+        
+      </div>
 
       <div className="relative z-20 flex flex-col items-center p-0 space-y-8 container mx-auto">
         {/* Hero Section with Background */}
-        <Hero/>
+        <Hero />
       </div>
 
       <div className="relative z-20 flex flex-col items-center p-2 pl-8 sm:p-8 sm:pl-20 space-y-8 container mx-auto">
         <Navbar />
         <Bio />
-        <Services/>
+        <Services />
         <Project />
         <Education />
         <Skills />
-        <Blog/>
-        <Contact/>
-         {/* <WorkExperience /> */}
+        <Blog />
+        <Contact />
+        {/* <WorkExperience /> */}
       </div>
       <Footer />
     </div>

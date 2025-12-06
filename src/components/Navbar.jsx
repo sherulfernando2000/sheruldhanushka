@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import logo from "../assets/logo3.png"
+import hat from "../assets/santa-hat.png"
 import { NAVIGATION_LINKS } from '../constants';
 import { FaTimes } from 'react-icons/fa';
 import { FaBars } from 'react-icons/fa6';
@@ -36,7 +37,8 @@ const Navbar = () => {
         {/* Desktop menu */}
         <div className="mx-auto hidden max-w-fit items-center justify-center rounded-full border border-stone-50/30 bg-white/10 backdrop-blur-md shadow-lg shadow-white/10 py-3 px-6  lg:flex">
           <div className="flex items-center justify-between gap-6">
-            <div>
+            <div className='relative'>
+              <img className='absolute -top-6' src={hat} width={40} alt="" />
               <a href="#">
                 <img src={logo} width={60}  alt="logo" />
               </a>
@@ -67,9 +69,12 @@ const Navbar = () => {
         {/* MobileMenu */}
         <div className="rounded-lg backdrop-blur-md lg:hidden px-4 py-2">
           <div className="flex items-center justify-between">
-            <a href="#">
-              <img src={logo} width={90} alt="logo" className="m-2" />
-            </a>
+            <div className='relative ml-2'>
+              <img className='absolute -top-6' src={hat} width={40} alt="" />
+              <a href="#">
+                <img src={logo} width={80}  alt="logo" />
+              </a>
+            </div>
             <button className="focus:outline-none" onClick={toggleMobileMenu}>
               {isMobileMenuOpen ? (
                 <FaTimes className="m-2 h-6 w-6" />

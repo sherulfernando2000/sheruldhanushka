@@ -111,7 +111,7 @@ const Skills = () => {
   }, [isAutoPlaying]);
 
   return (
-    <section className="flex w-full flex-col  pl-4 py-12 sm:py-20 text-white" data-aos="flip-up" data-aos-duration="1000">
+    <section className="flex w-full flex-col  pl-4 py-12 sm:py-20 text-white" data-aos="flip-up" data-aos-duration="1000" id='skills'>
       <div className='flex justify-center'>
         <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> MY SKILLS</h1>
       </div>

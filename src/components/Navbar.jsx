@@ -72,7 +72,7 @@ const Navbar = () => {
             <div className='relative ml-2'>
               <img className='absolute -top-6' src={hat} width={40} alt="" />
               <a href="#">
-                <img src={logo} width={80}  alt="logo" />
+                <img src={logo} width={60}  alt="logo" />
               </a>
             </div>
             <button className="focus:outline-none" onClick={toggleMobileMenu}>

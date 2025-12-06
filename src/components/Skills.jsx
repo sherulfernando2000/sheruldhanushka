@@ -11,7 +11,7 @@ const SkillCard = ({ category, icon: Icon, skills }) => (
     <div className="absolute inset-0 bg-gradient-to-br from-blue-500/0 to-blue-500/0 transition-opacity duration-300 group-hover:opacity-5"></div>
 
 
-    <h2 className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-blue-500 to-cyan-500 text-white
+    <h2 className="text-xl lg:text-2xl font-semibold bg-gradient-to-r from-blue-500 to-cyan-400 text-white
                                        shadow-lg shadow-blue-500/50 mb-4 flex items-center gap-3 relative z-10 px-3 rounded-3xl py-2 hover:shadow-blue-500/80 0">
       {Icon && <Icon className="w-7 h-7 " />} {category}
     </h2>
@@ -111,7 +111,7 @@ const Skills = () => {
   }, [isAutoPlaying]);
 
   return (
-    <section className="flex w-full flex-col  pl-4 py-12 sm:py-20 text-white">
+    <section className="flex w-full flex-col  pl-4 py-12 sm:py-20 text-white" data-aos="flip-up" data-aos-duration="1000">
       <div className='flex justify-center'>
         <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> MY SKILLS</h1>
       </div>

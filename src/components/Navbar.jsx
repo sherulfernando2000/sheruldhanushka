@@ -49,7 +49,7 @@ const Navbar = () => {
                   className={`
                     px-4 py-1 text-lg rounded-full transition-all duration-300
                     hover:bg-white/10 hover:backdrop-blur-md hover:shadow-lg hover:shadow-white/5 hover:scale-110
-                    hover:border hover:border-white/20
+                    hover:border hover:border-white/20 hover:-translate-y-1
                     ${activeLink === item.href
                       ? 'bg-white/15 backdrop-blur-lg border border-white/30 shadow-lg shadow-white/10 text-white'
                       : 'border border-transparent'

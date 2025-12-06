@@ -4,99 +4,6 @@ import { ProjectsData as projectsData} from '../constants';
 
 export default function Project() {
   
-// const projectsData = [
-//   {
-//     id: 1,
-//     title: "NextEVENT Mobile App",
-//     description: "A feature-rich mobile app for event management, built using React Native, Expo, and NativeWind for styling.",
-//     tech: ["React Native", "Firebase", "NativeWind"],
-//     image: "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 2,
-//     title: "Task Management App",
-//     description: "Real-time task management application with Firebase backend.",
-//     tech: ["React", "Firebase", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 3,
-//     title: "Social Media Dashboard",
-//     description: "Analytics dashboard for social media management built with Angular.",
-//     tech: ["Angular", "NestJS", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 4,
-//     title: "Mobile Fitness App",
-//     description: "Cross-platform fitness tracking app with React Native.",
-//     tech: ["React Native", "Firebase", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 5,
-//     title: "Blog Management System",
-//     description: "Content management system built with Laravel and React.",
-//     tech: ["React", "Laravel", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 6,
-//     title: "Real Estate Portal",
-//     description: "Property listing platform with advanced search and filters.",
-//     tech: ["React", "Spring Boot", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 7,
-//     title: "Weather Dashboard",
-//     description: "Real-time weather tracking application with beautiful UI.",
-//     tech: ["React", "Firebase", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 8,
-//     title: "Recipe Sharing Platform",
-//     description: "Community-driven recipe sharing platform with user ratings.",
-//     tech: ["Angular", "NestJS", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 9,
-//     title: "Expense Tracker",
-//     description: "Personal finance management app with data visualization.",
-//     tech: ["React Native", "Firebase"],
-//     image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   },
-//   {
-//     id: 10,
-//     title: "Learning Management System",
-//     description: "Online education platform with video streaming and quizzes.",
-//     tech: ["React", "Laravel", "Tailwind"],
-//     image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&q=80",
-//     github: "https://github.com",
-//     demo: "https://demo.com"
-//   }
-// ];
-
   const [selectedFilter, setSelectedFilter] = useState('All');
   const [showAll, setShowAll] = useState(false);
 
@@ -112,7 +19,7 @@ export default function Project() {
   const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
 
   return (
-    <section className="pt-20 px-4 sm:px-8 lg:px-1 min-h-screen" id="work">
+    <section className="pt-20 px-4 sm:px-8 lg:px-1 min-h-screen" id="work" data-aos="flip-up" data-aos-duration="1000">
       {/* Header */}
       <div className='flex justify-center'>
         <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> Projects</h1>

@@ -7,18 +7,28 @@ import Skills from "./components/Skills"
 import Services from "./components/Services.jsx"
 import Contact from "./components/Contact.jsx"
 import Blog from "./components/Blog.jsx"
+import Footer from "./components/Footer.jsx"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react"
+
 // import WorkExperience from "./components/WorkExperience"
-import MacDoc from "./components/handmade/MacDoc.jsx"
-import DarkVeil from './components/DarkVeil';
-import carlImg from "./assets/carl.jpeg"
-import { HERO } from "./constants"
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
+// import MacDoc from "./components/handmade/MacDoc.jsx"
+// import DarkVeil from './components/DarkVeil';
+// import carlImg from "./assets/carl.jpeg"
+// import { HERO } from "./constants"
+// import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+// import { MdEmail } from "react-icons/md";
 
 
 
 
 const App = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+    })
+  }, []);
 
   return (
     <div className="relative h-full overflow-y-auto antialiased font-cormorant">
@@ -34,12 +44,13 @@ const App = () => {
         <Bio />
         <Services/>
         <Project />
-        {/* <WorkExperience /> */}
         <Education />
         <Skills />
         <Blog/>
         <Contact/>
+         {/* <WorkExperience /> */}
       </div>
+      <Footer />
     </div>
 
   )

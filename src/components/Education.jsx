@@ -6,7 +6,7 @@ const Education = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
   return (
-    <div className="w-full py-16 px-1 md:px-4 pl-8" data-aos="fade-up" data-aos-duration="1000" id='work'>
+    <div className="w-full py-16 px-1 md:px-4 pl-8" >
       <div className="max-full mx-auto">
         {/* Header */}
         <div className="text-center mb-16">

@@ -24,11 +24,6 @@ import { useEffect } from "react"
 
 
 const App = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-    })
-  }, []);
 
   return (
     <div className="relative h-full overflow-y-auto antialiased font-cormorant">

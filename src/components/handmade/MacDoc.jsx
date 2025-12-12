@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 // import { Github, Linkedin, Twitter, Instagram, Mail } from 'lucide-react';
-import GitHub from '../../assets/GitHub.png'
-import LinkedIn from '../../assets/LinkedIn.png'
-import Insta from '../../assets/Insta.png'
-import Email from '../../assets/Email.png'
-import Facebook from '../../assets/Facebook.png'
+import GitHub from '../../assets/GitHub.png?format=webp'
+import LinkedIn from '../../assets/LinkedIn.png?format=webp'
+import Insta from '../../assets/Insta.png?format=webp'
+import Email from '../../assets/Email.png?format=webp'
+import Facebook from '../../assets/Facebook.png?format=webp'
 import projectImage1 from "../../assets/project1.jpeg";
 
 const MacDock = () => {

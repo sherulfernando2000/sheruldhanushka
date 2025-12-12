@@ -21,11 +21,11 @@ import projectImage4 from "../assets/project4.jpeg";
 import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
-import webService from "../assets/service_section/web.jpg";
-import backendService from "../assets/service_section/backend.jpg";
-import mobileService from "../assets/service_section/mobile.jpg";
-import ui_uxService from "../assets/service_section/ui_ux.jpg";
-import solutionService from "../assets/service_section/solution.jpg";
+import webService from "../assets/service_section/web.jpg?format=webp";
+import backendService from "../assets/service_section/backend.jpg?format=webp";
+import mobileService from "../assets/service_section/mobile.jpg?format=webp";
+import ui_uxService from "../assets/service_section/ui_ux.jpg?format=webp";
+import solutionService from "../assets/service_section/solution.jpg?format=webp";
 
 import project_nextEventImage from "../assets/project_section/project_nextEventImage.webp";
 import project_BookClubImage from "../assets/project_section/project_BookClubImage.webp";

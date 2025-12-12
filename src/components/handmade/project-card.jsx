@@ -129,6 +129,7 @@ export default function ProjectCard({ project }) {
           src={project.image} 
           alt={project.title}
           className="w-full h-full object-cover object-center"
+          loading="lazy"
         />
 
         {/* Black overlay that slides up on hover - covers bottom half by default */}

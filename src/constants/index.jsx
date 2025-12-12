@@ -27,12 +27,12 @@ import mobileService from "../assets/service_section/mobile.jpg";
 import ui_uxService from "../assets/service_section/ui_ux.jpg";
 import solutionService from "../assets/service_section/solution.jpg";
 
-import project_nextEventImage from "../assets/project_section/project_nextEventImage.png";
-import project_BookClubImage from "../assets/project_section/project_BookClubImage.png";
-import project_smartClassImage from "../assets/project_section/project_smartClassImage.png";
-import project_BakeryImage from "../assets/project_section/project_BakeryImage.png";
-import project_CulinaryManageImage from "../assets/project_section/project_CulinaryManageImage.png";
-import project_PosImage from "../assets/project_section/project_PosImage.png";
+import project_nextEventImage from "../assets/project_section/project_nextEventImage.webp";
+import project_BookClubImage from "../assets/project_section/project_BookClubImage.webp";
+import project_smartClassImage from "../assets/project_section/project_smartClassImage.webp";
+import project_BakeryImage from "../assets/project_section/project_BakeryImage.webp";
+import project_CulinaryManageImage from "../assets/project_section/project_CulinaryManageImage.webp";
+import project_PosImage from "../assets/project_section/project_PosImage.webp";
 
 
 import { RiReactjsLine } from "react-icons/ri";

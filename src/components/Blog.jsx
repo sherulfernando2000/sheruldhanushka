@@ -4,7 +4,7 @@ import { BLOG} from '../constants';
 const Blog = () => {
 
   return (
-    <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]" data-aos="flip-up" data-aos-duration="1000">
+    <section className="pb-10 pt-20 lg:pb-20 lg:pt-[120px]" data-aos="fade-up" data-aos-duration="1000">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap -mx-4">
           <div className="w-full px-4">

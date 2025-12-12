@@ -34,7 +34,7 @@ return (
       <h2 className="my-8 p-1 text-3xl font-bold md:text-5xl lg:text-6xl">
         {HERO.name}
       </h2>
-      <h3 className="text-2xl md:text-4xl lg:text-5xl">I'm a <span ref={el} className="text-cyan-300"> </span> </h3>
+      <h3 className="text-2xl md:text-4xl lg:text-5xl">I'm a <span ref={el} className="text-sky-500"> </span> </h3>
 
       <p className="mb-8 pt-7 px-16 text-md md:text-xl lg:text-2xl text-center">{HERO.description}</p>
 

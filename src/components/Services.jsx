@@ -112,7 +112,7 @@ const Services = () => {
 
 
   return (
-    <section className="flex w-full flex-col  py-12 sm:py-20 " data-aos="flip-up" data-aos-duration="1000">
+    <section className="flex w-full flex-col  py-12 sm:py-20 " data-aos="fade-up" data-aos-duration="1000">
       <div className='flex justify-center'>
         <h1 className="mb-2 text-center text-3xl sm:text-4xl lg:text-5xl font-semibold w-fit tracking-wide  border-b-2 px-8 rounded-md shadow-xl"> Services</h1>
       </div>

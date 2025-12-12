@@ -253,7 +253,7 @@ export default function ContactForm() {
 
 
   return (
-    <div className="h-full  flex items-center justify-center" id='contact' data-aos="flip-up" data-aos-duration="1000" id='bio'>
+    <div className="h-full  flex items-center justify-center" id='contact' data-aos="flip-up" data-aos-duration="1000">
       <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-2 gap-12">
         
 
